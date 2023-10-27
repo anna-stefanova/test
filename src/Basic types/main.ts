@@ -144,3 +144,10 @@ function logObj(a: string | number, b: string | boolean) {
         console.log(a, b)
     }
 }
+
+function fetchWithAuth(url: string, method: 'post'|'get'): 1|-1 {
+    return 1;
+}
+const method = 'post';
+
+fetchWithAuth('', method)

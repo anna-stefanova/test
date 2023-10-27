@@ -116,4 +116,9 @@ function logObj(a, b) {
         console.log(a, b);
     }
 }
+function fetchWithAuth(url, method) {
+    return 1;
+}
+const method = 'post';
+fetchWithAuth('', method);
 //# sourceMappingURL=main.js.map
