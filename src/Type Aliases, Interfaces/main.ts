@@ -27,6 +27,7 @@ console.log(user1);
 interface Admin {
     name: string;
     age: number;
+    role: number;
 }
 
 interface RoleAdmin {
@@ -41,7 +42,8 @@ let admin: AdminWithRoleAdmin = {
     name: 'Федя',
     age: 25,
     id: 3,
-    skills: ['1', '2']
+    skills: ['1', '2'],
+    role: 0
 }
 
 interface UserDic {
