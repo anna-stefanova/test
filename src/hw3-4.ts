@@ -30,3 +30,18 @@ interface IResponseFailed {
     status: StatusResponse.FAILED;
     data: DataFailedResponse;
 }
+
+type f = (res: IResponseSuccess | IResponseFailed) => number;
+
+function getIdFromData(res: IResponseSuccess | IResponseFailed):number {
+    if (isSuccess(res)) {
+        return res.data.databaseId;
+    } else {
+        return res.data.errorCode;
+    }
+}
+
+
+function isSuccess(r: IResponseSuccess | IResponseFailed): r is IResponseSuccess {
+    return r.status === StatusResponse.SUCCESS;
+}

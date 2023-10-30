@@ -11,7 +11,8 @@ let admin = {
     name: 'Федя',
     age: 25,
     id: 3,
-    skills: ['1', '2']
+    skills: ['1', '2'],
+    role: 0
 };
 let usersList = {
     1: user1,
